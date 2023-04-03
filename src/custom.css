@@ -1,0 +1,66 @@
+/* Provide sufficient contrast against white background */
+a {
+    color: #0366d6;
+}
+
+code {
+    color: #E01A76;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
+}
+
+@font-face {
+    font-family: "Great Vibes"; /*Can be any text*/
+    src: local("GreatVibes-Regular"), url("./Assets/Fonts/GreatVibes-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Proxima Nova Rg"; /*Can be any text*/
+    src: local("ProximaNova-Regular"), url("./Assets/Fonts/ProximaNova-Regular.otf") format('opentype');
+}
+
+body {
+    overflow: hidden;
+    margin: 0;
+}
+
+.hidden{
+    opacity: 0;
+    transition: all 1s;
+}
+
+.show {
+    opacity: 1;
+}
+
+.card-container {
+    flex-direction: row;
+    align-items: center;
+}
+
+.card {
+    width: 50%;
+    margin: 1rem 0;
+    background-color: #FFF;
+    padding: 1rem;
+    border-radius: 6px;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background-color: #737980;
+}
+
+.card-title {
+    font-family: 'Proxima Nova Rg';
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.card-text {
+    font-family: 'Proxima Nova Rg';
+    margin: 0;
+    font-size: 1rem;
+}
