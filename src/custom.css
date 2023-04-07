@@ -101,9 +101,9 @@ body {
 #NameDiv {
     font-family: 'RetroSignature';
     margin: 0;
-    font-size: "8vw";
-    font-style: "lighter";
-    text-align: "center";
+    font-size: 8vw;
+    font-style: lighter;
+    text-align: center;
 }
 
 #Location {
