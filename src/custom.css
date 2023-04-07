@@ -14,13 +14,21 @@ code {
 }
 
 @font-face {
-    font-family: "Great Vibes"; /*Can be any text*/
+    font-family: "Great Vibes";
+    /*Can be any text*/
     src: local("GreatVibes-Regular"), url("./Assets/Fonts/GreatVibes-Regular.ttf") format("truetype");
 }
 
 @font-face {
-    font-family: "Proxima Nova Rg"; /*Can be any text*/
+    font-family: "Proxima Nova Rg";
+    /*Can be any text*/
     src: local("ProximaNova-Regular"), url("./Assets/Fonts/ProximaNova-Regular.otf") format('opentype');
+}
+
+@font-face {
+    font-family: "RetroSignature";
+    /*Can be any text*/
+    src: local("RetroSignature"), url("./Assets/Fonts/RetroSignature.otf") format('opentype');
 }
 
 body {
@@ -28,7 +36,7 @@ body {
     margin: 0;
 }
 
-.hidden{
+.hidden {
     opacity: 0;
     transition: all 1s;
 }
@@ -64,3 +72,91 @@ body {
     margin: 0;
     font-size: 1rem;
 }
+
+#LandingMainDiv {
+    background: rgba(255, 255, 255, 0.7);
+    height: 40%;
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: "#FAF7F6";
+    padding: 20px;
+    border-radius: 8px;
+    margin: 'auto';
+    max-width: 80%;
+    padding-top: 5%;
+
+}
+
+#Date {
+    font-family: 'Proxima Nova Rg';
+    margin: 0;
+    font-size: 2vw;
+    font-weight: lighter;
+    text-align: center;
+}
+
+#NameDiv {
+    font-family: 'RetroSignature';
+    margin: 0;
+    font-size: "8vw";
+    font-style: "lighter";
+    text-align: "center";
+}
+
+#Location {
+    font-family: 'RetroSignature';
+    margin: 0;
+    font-size: 4vw;
+    text-align: center;
+}
+
+/* iPad Portrait */
+@media screen and (min-device-width: 481px) and (orientation:portrait) {}
+
+@media all and (min-width: 768px) and (max-width: 1024px) {
+
+    #LandingMainDiv {
+        background: rgba(255, 255, 255, 0.7);
+        height: 30%;
+        width: 50%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: "#FAF7F6";
+        padding: 20px;
+        border-radius: 4px;
+        margin: 'auto';
+        max-width: 80%;
+        padding-top: 5%;
+    }
+
+    #Date {
+        font-family: 'Proxima Nova Rg';
+        margin: 0;
+        font-size: 4vw;
+        font-weight: lighter;
+        text-align: center;
+    }
+
+    .DatePole {
+        font-size: 5vw;
+        position: relative;
+        bottom: -4px;
+    }
+
+    #NameDiv {
+        font-family: 'RetroSignature';
+        margin: 0;
+        font-size: 8vw;
+        font-style: lighter;
+        text-align: center;
+    }
+}
+
+@media all and (min-width: 480px) and (max-width: 768px) {}
+
+@media all and (max-width: 480px) {}

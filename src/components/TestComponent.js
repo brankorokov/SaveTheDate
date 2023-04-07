@@ -1,6 +1,6 @@
 ﻿import React, { Component } from 'react';
 import Favicon from "react-favicon";
-import weddingPic from '../Assets/images/wedding-cover-1.jpg'
+import weddingPic from '../Assets/images/Overhead-Dubrovnik.jpg'
 import dubrovnikPic from '../Assets/images/dubrovnik.jpg'
 import { Link, Element } from 'react-scroll';
 import { FaChevronDown,  FaChevronUp} from 'react-icons/fa';
@@ -36,12 +36,12 @@ export class TestComponent extends Component {
             <div className="col-12">
                 {/*test*/}
                 <Element name="firstSection">
-                    <div style={{ position: 'relative', maxWidth: '100%', overflow: 'hidden', height: 'calc(100vh)' }}>
-                        <img src={weddingPic} style={{ width: '100%', height: 'calc(100vh)', objectFit: "cover" }} />
-                        <div style={{ position: 'absolute', top: '80%', left: '50%', transform: 'translate(-50%, -50%)', backgroundColor: "#828061", opacity: 0.9, padding: '20px', borderRadius: '8px', margin: 'auto', maxWidth: '80%' }}>
-                            <h1 style={{ fontFamily: 'Great Vibes', margin: 0, fontSize: "60px", fontStyle: "bold", textAlign: "center" }}>Roko & Fiancee</h1>
-                            <p style={{ fontFamily: 'Proxima Nova Rg', margin: 0, fontSize: "35px", fontWeight: "bold", textAlign: "center" }}>06|20|2023</p>
-                            <p style={{ fontFamily: 'Great Vibes', margin: 0, fontSize: "20px", textAlign: "center" }}>Dubrovnik, Croatia</p>
+                    <div style={{ position: 'relative', maxWidth: '100%', overflow: 'hidden', height: 'calc(100vh)', bottom: "15%" }}>
+                        <img src={weddingPic} style={{ width: '100%', height: 'calc(100vh)', objectFit: "cover", bottom: "15% !important" }} />
+                        <div id="LandingMainDiv">
+                            <h1 id='NameDiv'>Roko & Nicole</h1>
+                            <p id='Date'>06<span className='DatePole'>|</span>02<span className='DatePole'>|</span>2023</p>
+                            <p id='Location' style={{ fontFamily: 'RetroSignature', margin: 0, fontSize: "4vw", textAlign: "center" }}>Dubrovnik, Croatia</p>
                         </div>
                         <div style={{ position: 'absolute', bottom: '20px', left: '50%', transform: 'translateX(-50%)', cursor: 'pointer' }}>
                             <Link to="nextSection" spy={true} duration={600} smooth={true}>
