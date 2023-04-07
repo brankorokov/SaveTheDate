@@ -41,7 +41,7 @@ export class TestComponent extends Component {
                         <div id="LandingMainDiv">
                             <h1 id='NameDiv'>Roko & Nicole</h1>
                             <p id='Date'>06<span className='DatePole'>|</span>02<span className='DatePole'>|</span>2023</p>
-                            <p id='Location' style={{ fontFamily: 'RetroSignature', margin: 0, fontSize: "4vw", textAlign: "center" }}>Dubrovnik, Croatia</p>
+                            <p id='Location'>Dubrovnik, Croatia</p>
                         </div>
                         <div style={{ position: 'absolute', bottom: '20px', left: '50%', transform: 'translateX(-50%)', cursor: 'pointer' }}>
                             <Link to="nextSection" spy={true} duration={600} smooth={true}>
