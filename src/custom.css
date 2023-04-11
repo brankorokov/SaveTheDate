@@ -55,7 +55,7 @@ body {
     margin: 1rem 0;
     background-color: #FFF;
     padding: 1rem;
-    border-radius: 6px;
+    border-radius: px;
     box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
     text-align: center;
     background-color: #737980;
@@ -75,25 +75,27 @@ body {
 
 #LandingMainDiv {
     background: rgba(255, 255, 255, 0.7);
-    height: 40%;
+    height: 30%;
     width: 50%;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: "#FAF7F6";
-    padding: 20px;
     border-radius: 8px;
     margin: 'auto';
     max-width: 80%;
-    padding-top: 5%;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
 }
 
 #Date {
     font-family: 'Proxima Nova Rg';
     margin: 0;
-    font-size: 2vw;
+    font-size: 4vw;
     font-weight: lighter;
     text-align: center;
 }
@@ -113,11 +115,7 @@ body {
     text-align: center;
 }
 
-/* iPad Portrait */
-@media screen and (min-device-width: 481px) and (orientation:portrait) {}
-
-@media all and (min-width: 768px) and (max-width: 1024px) {
-
+@media all and (min-width: 1700px) {
     #LandingMainDiv {
         background: rgba(255, 255, 255, 0.7);
         height: 30%;
@@ -127,11 +125,60 @@ body {
         left: 50%;
         transform: translate(-50%, -50%);
         background-color: "#FAF7F6";
-        padding: 20px;
-        border-radius: 4px;
+        border-radius: 8px;
         margin: 'auto';
         max-width: 80%;
-        padding-top: 5%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 3%;
+    }
+}
+
+@media all and (min-width: 840px) and (max-width: 1150px) {
+    #LandingMainDiv {
+        background: rgba(255, 255, 255, 0.7);
+        height: 30%;
+        width: 50%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        padding: 3px;
+        transform: translate(-50%, -50%);
+        background-color: "#FAF7F6";
+        border-radius: 8px;
+        margin: 'auto';
+        max-width: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 0;
+    }
+}
+
+/* iPad Portrait */
+@media screen and (min-device-width: 481px) and (orientation:portrait) {
+
+    #LandingMainDiv {
+        background: rgba(255, 255, 255, 0.7);
+        height: 30%;
+        width: 50%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        padding: 3px;
+        transform: translate(-50%, -50%);
+        background-color: "#FAF7F6";
+        border-radius: 8px;
+        margin: 'auto';
+        max-width: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 0;
     }
 
     #Date {
@@ -151,12 +198,162 @@ body {
     #NameDiv {
         font-family: 'RetroSignature';
         margin: 0;
-        font-size: 8vw;
+        font-size: 9vw;
         font-style: lighter;
         text-align: center;
     }
 }
 
-@media all and (min-width: 480px) and (max-width: 768px) {}
+@media all and (min-width: 761px) and (max-width: 1300px) {
 
-@media all and (max-width: 480px) {}
+    #LandingMainDiv {
+        background: rgba(255, 255, 255, 0.7);
+        height: 40%;
+        width: 60%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: "#FAF7F6";
+        border-radius: 8px;
+        margin: 'auto';
+        max-width: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 50px;
+    }
+
+    #Date {
+        font-family: 'Proxima Nova Rg';
+        margin: 0;
+        font-size: 4vw;
+        font-weight: lighter;
+        text-align: center;
+    }
+
+    .DatePole {
+        font-size: 5vw;
+        position: relative;
+        bottom: -3px;
+    }
+
+    #NameDiv {
+        font-family: 'RetroSignature';
+        margin: 0;
+        font-size: 12vw;
+        font-style: lighter;
+        text-align: center;
+    }
+
+    #Location {
+        font-family: 'RetroSignature';
+        margin: 0;
+        font-size: 9vw;
+        text-align: center;
+    }
+}
+
+@media all and (min-width: 480px) and (max-width: 760px) {
+
+    #LandingMainDiv {
+        background: rgba(255, 255, 255, 0.7);
+        height: 30%;
+        width: 50%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: "#FAF7F6";
+        border-radius: 8px;
+        margin: 'auto';
+        max-width: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    #Date {
+        font-family: 'Proxima Nova Rg';
+        margin: 0;
+        font-size: 4vw;
+        font-weight: lighter;
+        text-align: center;
+    }
+
+    .DatePole {
+        font-size: 5vw;
+        position: relative;
+        bottom: -4px;
+    }
+
+    #NameDiv {
+        font-family: 'RetroSignature';
+        margin: 0;
+        font-size: 10vw;
+        font-style: lighter;
+        text-align: center;
+    }
+
+    #Location {
+        font-family: 'RetroSignature';
+        margin: 0;
+        font-size: 6vw;
+        text-align: center;
+    }
+}
+
+@media all and (max-width: 480px) and (max-width: 480px) {
+    
+    #LandingMainDiv {
+        background: rgba(255, 255, 255, 0.7);
+        height: 40%;
+        width: 80%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        padding: 3px;
+        transform: translate(-50%, -50%);
+        background-color: "#FAF7F6";
+        border-radius: 8px;
+        margin: 'auto';
+        max-width: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    #Date {
+        font-family: 'Proxima Nova Rg';
+        margin: 0;
+        font-size: 6vw;
+        font-weight: lighter;
+        text-align: center;
+    }
+
+    .DatePole {
+        font-size: 8vw;
+        position: relative;
+        bottom: -3px;
+    }
+
+    #NameDiv {
+        font-family: 'RetroSignature';
+        margin: 0;
+        font-size: 15vw;
+        font-style: lighter;
+        text-align: center;
+    }
+
+    #Location {
+        font-family: 'RetroSignature';
+        margin: 0;
+        font-size: 12vw;
+        text-align: center;
+    }
+}

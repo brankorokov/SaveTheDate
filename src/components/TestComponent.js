@@ -44,7 +44,7 @@ export class TestComponent extends Component {
                             <p id='Location'>Dubrovnik, Croatia</p>
                         </div>
                         <div style={{ position: 'absolute', bottom: '20px', left: '50%', transform: 'translateX(-50%)', cursor: 'pointer' }}>
-                            <Link to="nextSection" spy={true} duration={600} smooth={true}>
+                            <Link className="NavArrow" to="overflow" spy={true} duration={900} smooth={true}>
                                 <FaChevronDown size={'3em'} style={{color: 'Black', fontWight: 'lighter'}}/>
                             </Link>
                         </div>
@@ -54,7 +54,7 @@ export class TestComponent extends Component {
                 <Element name="nextSection">
                     <div className={"hidden col-12"} style={{ width: '100%', height: 'calc(100vh)', display: 'flex', justifyContent: 'center', alignItems: 'center', position: 'relative' }}>
                         <div style={{ position: 'absolute', top: '30px', left: '50%', transform: 'translateX(-50%)', cursor: 'pointer', zIndex: 100}}>
-                            <Link to="firstSection" spy={true} duration={600} smooth={true}>
+                            <Link className="NavArrow" to="firstSection" spy={true} duration={600} smooth={true}>
                                 <FaChevronUp size={'3em'} style={{color: 'black', fontWight: 'lighter'}}/>
                             </Link>
                         </div>
@@ -73,6 +73,9 @@ export class TestComponent extends Component {
 
                         </div>
                     </div>
+                </Element>
+                <Element name="overflow">
+
                 </Element>
             </div>
         );
