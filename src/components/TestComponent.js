@@ -1,7 +1,7 @@
 ﻿import React, { Component } from 'react';
 import weddingPic from '../Assets/images/Overhead-Dubrovnik.jpg'
 import paraglidePic from '../Assets/images/Paraglide.jpg'
-import { Link, Element } from 'react-scroll';
+import { Link, Element, scroller } from 'react-scroll';
 import { FaChevronDown, FaChevronUp } from 'react-icons/fa';
 
 export class TestComponent extends Component {
@@ -30,7 +30,6 @@ export class TestComponent extends Component {
 
     render() {
         const { isVisible } = this.state;
-
         return (
             <div className="col-12">
                 <Element name="firstSection">
@@ -41,7 +40,7 @@ export class TestComponent extends Component {
                             <p id='Date'>06<span className='DatePole'>|</span>02<span className='DatePole'>|</span>2023</p>
                             <p id='Location'>Dubrovnik, Croatia</p>
                         </div>
-                        <div id="DownArrow" style={{ }}>
+                        <div id="DownArrow" style={{}}>
                             <Link className="NavArrow" to="overflow" spy={true} duration={900} smooth={true}>
                                 <FaChevronDown size={'3em'} style={{ color: 'Black', fontWight: 'lighter' }} />
                             </Link>
@@ -51,7 +50,7 @@ export class TestComponent extends Component {
 
                 <Element name="nextSection">
                     <div className={"hidden col-12"} style={{ width: '100%', height: 'calc(100vh)', display: 'flex', justifyContent: 'center', alignItems: 'center', position: 'relative' }}>
-                        <div style={{ position: 'absolute', top: '30px', left: '50%', transform: 'translateX(-50%)', cursor: 'pointer', zIndex: 100 }}>
+                        <div id="UpArrow" style={{  }}>
                             <Link className="NavArrow" to="firstSection" spy={true} duration={600} smooth={true}>
                                 <FaChevronUp size={'3em'} style={{ color: 'black', fontWight: 'lighter' }} />
                             </Link>
@@ -80,7 +79,6 @@ export class TestComponent extends Component {
                     </div>
                 </Element>
                 <Element name="overflow">
-
                 </Element>
             </div>
         );

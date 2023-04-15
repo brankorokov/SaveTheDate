@@ -148,6 +148,15 @@ body {
     text-align: center;
 }
 
+#UpArrow {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+    z-index: 100;
+}
+
 @media all and (min-width: 1700px) {
     #LandingMainDiv {
         background: rgba(255, 255, 255, 0.7);
@@ -214,6 +223,24 @@ body {
         padding: 0;
     }
 
+    .card {
+        width: 40%;
+        margin: 1rem 1rem;
+        background-color: #FFF;
+        padding: 1rem;
+        border-radius: 8px;
+        box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        background: rgba(255, 255, 255, 0.7);
+    }
+
+    .cardContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
     #Date {
         font-family: 'Proxima Nova Rg';
         margin: 0;
@@ -235,10 +262,18 @@ body {
         font-style: lighter;
         text-align: center;
     }
+
+    .card-title {
+        font-family: 'RetroSignature';
+        margin: 0;
+        font-size: 3rem;
+        padding-bottom: 1.5rem;
+    }
 }
 
 @media all and (min-width: 761px) and (max-width: 1300px) {
 
+    
     #LandingMainDiv {
         background: rgba(255, 255, 255, 0.7);
         height: 40%;
@@ -258,16 +293,27 @@ body {
         padding: 50px;
     }
 
+    .card {
+        width: 60%;
+        margin: 1rem 1rem;
+        background-color: #FFF;
+        padding: 1rem;
+        border-radius: 8px;
+        box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        background: rgba(255, 255, 255, 0.7);
+    }
+    
     #Date {
         font-family: 'Proxima Nova Rg';
         margin: 0;
-        font-size: 4vw;
+        font-size: 3vw;
         font-weight: lighter;
         text-align: center;
     }
 
     .DatePole {
-        font-size: 5vw;
+        font-size: 4vw;
         position: relative;
         bottom: -3px;
     }
@@ -283,7 +329,7 @@ body {
     #Location {
         font-family: 'RetroSignature';
         margin: 0;
-        font-size: 9vw;
+        font-size: 7vw;
         text-align: center;
     }
 
@@ -295,9 +341,22 @@ body {
         transform: translateX(-50%);
         cursor: pointer;
     }
+
+    #UpArrow {
+        position: absolute;
+        top: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        cursor: pointer;
+        z-index: 100;
+    }
 }
 
 @media all and (min-width: 480px) and (max-width: 760px) {
+    .body {
+        margin: 0;
+        overflow: scroll;
+    }
 
     #LandingMainDiv {
         background: rgba(255, 255, 255, 0.7);
@@ -316,6 +375,17 @@ body {
         align-items: center;
         flex-direction: column;
         padding: 0;
+    }
+
+    .card {
+        width: 60%;
+        margin: 1rem 1rem;
+        background-color: #FFF;
+        padding: 1rem;
+        border-radius: 8px;
+        box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        background: rgba(255, 255, 255, 0.7);
     }
 
     #Date {
@@ -355,11 +425,21 @@ body {
         transform: translateX(-50%);
         cursor: pointer;
     }
+
+    #UpArrow {
+        position: absolute;
+        top: 50px;
+        left: 50%;
+        transform: translateX(-50%);
+        cursor: pointer;
+        z-index: 100;
+    }
 }
 
 @media all and (max-width: 480px) and (max-width: 480px) {
     .body {
         margin: 0;
+        overflow: scroll;
     }
 
     #LandingMainDiv {
@@ -438,5 +518,14 @@ body {
 
     #DownArrow {
         margin-bottom: 50px;
+    }
+
+    #UpArrow {
+        position: absolute;
+        top: 50px;
+        left: 50%;
+        transform: translateX(-50%);
+        cursor: pointer;
+        z-index: 100;
     }
 }
