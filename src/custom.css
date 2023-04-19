@@ -402,6 +402,14 @@ body {
         bottom: -4px;
     }
 
+    .cardContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20%;
+    }
+
     #NameDiv {
         font-family: 'RetroSignature';
         margin: 0;
@@ -428,7 +436,7 @@ body {
 
     #UpArrow {
         position: absolute;
-        top: 50px;
+        top: 70px;
         left: 50%;
         transform: translateX(-50%);
         cursor: pointer;
@@ -436,7 +444,7 @@ body {
     }
 }
 
-@media all and (max-width: 480px) and (max-width: 480px) {
+@media all and (min-width: 410px) and (max-width: 480px) {
     #UpArrow {
         position: absolute;
         top: 90px;
@@ -527,12 +535,12 @@ body {
     }
 
     #DownArrow {
-        margin-bottom: 50px;
+        margin-bottom: 60px;
     }
 
     #UpArrow {
         position: absolute;
-        top: 70px;
+        top: 90px;
         left: 50%;
         transform: translateX(-50%);
         cursor: pointer;
