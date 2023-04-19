@@ -437,6 +437,15 @@ body {
 }
 
 @media all and (max-width: 480px) and (max-width: 480px) {
+    #UpArrow {
+        position: absolute;
+        top: 70px;
+        left: 50%;
+        transform: translateX(-50%);
+        cursor: pointer;
+        z-index: 100;
+    }
+    
     .body {
         margin: 0;
         overflow: scroll;
@@ -475,6 +484,7 @@ body {
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        margin-top: 20%;
     }
 
     .card {
@@ -522,7 +532,7 @@ body {
 
     #UpArrow {
         position: absolute;
-        top: 50px;
+        top: 70px;
         left: 50%;
         transform: translateX(-50%);
         cursor: pointer;

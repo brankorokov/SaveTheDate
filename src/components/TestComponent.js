@@ -49,7 +49,7 @@ export class TestComponent extends Component {
                 </Element>
 
                 <Element name="nextSection">
-                    <div className={"hidden col-12"} style={{ width: '100%', height: 'calc(100vh)', display: 'flex', justifyContent: 'center', alignItems: 'center', position: 'relative' }}>
+                    <div id="NextSectionDiv" className={"hidden col-12"} style={{ width: '100%', height: 'calc(100vh)', display: 'flex', justifyContent: 'center', alignItems: 'center', position: 'relative' }}>
                         <div id="UpArrow" style={{  }}>
                             <Link className="NavArrow" to="firstSection" spy={true} duration={600} smooth={true}>
                                 <FaChevronUp size={'3em'} style={{ color: 'black', fontWight: 'lighter' }} />
@@ -78,7 +78,7 @@ export class TestComponent extends Component {
                         </div>
                     </div>
                 </Element>
-                <Element name="overflow">
+                <Element id="overflow" name="overflow">
                 </Element>
             </div>
         );
