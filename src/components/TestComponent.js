@@ -1,4 +1,5 @@
 ﻿import React, { Component } from 'react';
+//test
 import weddingPic from '../Assets/images/Overhead-Dubrovnik.jpg'
 import paraglidePic from '../Assets/images/Paraglide.jpg'
 import { Link, Element, scroller } from 'react-scroll';
