@@ -1,18 +1,22 @@
-import React, { Component } from 'react';
-import { Route } from 'react-router';
-import { Layout } from './components/Layout';
+import React, { Component } from "react";
+import { BrowserRouter, Routes, Router, Route } from "react-router-dom";
+import { Layout } from "./components/Layout";
 
-import './custom.css'
-import { TestComponent } from './components/TestComponent';
+import "./custom.css";
+import { Home } from "./components/Home";
+import { Itinerary } from "./components/Itinerary.js";
 
 export default class App extends Component {
-    static displayName = App.name;
+  static displayName = App.name;
 
-    render() {
-        return (
-            <Layout>
-                <Route path='/test' component={TestComponent} />
-            </Layout>
-        );
-    }
+  render() {
+    return (
+      <BrowserRouter>
+        <Routes>
+          <Route exact path="/" element={<Home/>} />
+          <Route exact path="/Itinerary" element={<Itinerary/>} />
+        </Routes>
+      </BrowserRouter>
+    );
+  }
 }

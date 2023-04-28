@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { TestComponent } from './TestComponent';
+import { Home } from './Home';
 
 export class Layout extends Component {
     static displayName = Layout.name;
@@ -7,7 +7,7 @@ export class Layout extends Component {
     render() {
         return (
             <div>
-                <TestComponent />
+                <Home />
             </div>
         );
     }
