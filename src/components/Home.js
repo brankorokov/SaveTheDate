@@ -66,7 +66,7 @@ export class Home extends Component {
               <p id="Location">Dubrovnik, Croatia</p>
             </div>
             <div id="DownArrow" style={{}}>
-              <LinkButton UpOrDown={"DOWN"} LinkTo="nextSection"></LinkButton>
+              <LinkButton UpOrDown={"DOWN"} LinkTo="overflow"></LinkButton>
             </div>
           </div>
         </Element>
