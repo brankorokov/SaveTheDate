@@ -30,6 +30,13 @@ function RenderItinerary() {
 }
 
 export class Itinerary extends Component {
+  componentDidMount() {
+    window.scroll({
+      top: 0,
+      left: 0,
+    });
+  }
+
   constructor(props) {
     super(props);
   }
@@ -37,12 +44,12 @@ export class Itinerary extends Component {
   render() {
     return (
       <div>
-          <Link to="/" style={{ position: "absolute", top: 20, left: 20 }}>
-            <FaChevronLeft
-              size={"2em"}
-              style={{ color: "black", fontWight: "lighter" }}
-            />
-          </Link>
+        <Link to="/" style={{ position: "absolute", top: 20, left: 20 }}>
+          <FaChevronLeft
+            size={"2em"}
+            style={{ color: "black", fontWight: "lighter" }}
+          />
+        </Link>
         <img
           src={itineraryPic}
           style={{
