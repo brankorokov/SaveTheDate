@@ -113,7 +113,9 @@ export class Home extends Component {
                   </p>
 
                   <Link to="/Itinerary">
-                      Take me there!
+                    <button className="card-button">
+                      <p className="cardButtonText">Take me there!</p>
+                    </button>
                   </Link>
                 </div>
                 <div style={{}} className={"card"}>

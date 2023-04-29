@@ -1,43 +1,58 @@
 import React, { Component } from "react";
 import itineraryPic from "../Assets/images/ItineraryPic.jpg";
-import paraglidePic from "../Assets/images/Paraglide.jpg";
-import { Link, Element, scroller } from "react-scroll";
-import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 import "./Itinerary.css";
+import { ItineraryObject } from "../components/ItineraryObject";
+import { Link } from "react-router-dom";
+import { FaChevronLeft } from "react-icons/fa";
 
-const timeArray = ['3:30-4:30', '4:30-5:30', '6:00-7:00', '7:00-8:00', '8:00-8:30', '8:30-10:00', '9:30-11:00', '11:00'];
-const eventArray = ['Ceremony', 'Photos with Bride and Groom', 'Terra Madre Welcome: Drinks and Oysters', 'Hors d’Oeuvres and Salad', 'Sunset dancing', 'Dinner: Risotto, Choice of Lamb, Veal, Chicken, and Schnitzel', 'Dancing', 'Dessert'];
+const itineraryObjects = [
+  { Time: "3:30-4:30", Event: "Ceremony" },
+  { Time: "4:30-5:30", Event: "Photos with Bride and Groom" },
+  { Time: "6:00-7:00", Event: "Terra Madre Welcome: Drinks and Oysters" },
+  { Time: "7:00-8:00", Event: "Hors d’Oeuvres and Salad" },
+  { Time: "8:00-8:30", Event: "Sunset dancing" },
+  {
+    Time: "8:30-10:00",
+    Event: "Dinner: Risotto, Choice of Lamb, Veal, Chicken, and Schnitzel",
+  },
+  { Time: "9:30-11:00", Event: "Dancing" },
+  { Time: "11:00-3:00", Event: "Dessert" },
+];
 
-function RenderItinerary(){
-  var toReturn = null;
-  for(var i = 0; i < timeArray.length; i++){
-    toReturn += <div></div>
-  }
-  return(
-    
+function RenderItinerary() {
+  return (
+    <>
+      {itineraryObjects.map((object) => (
+        <ItineraryObject time={object.Time} event={object.Event} />
+      ))}
+    </>
   );
 }
+
 export class Itinerary extends Component {
   constructor(props) {
     super(props);
   }
-  
- 
-  
+
   render() {
     return (
-      <div className={"col-12"}>
-         <img
-              src={itineraryPic}
-              style={{
-                width: "100%",
-                height: "calc(100vh)",
-                objectFit: "cover"
-              }}
+      <div>
+          <Link to="/" style={{ position: "absolute", top: 20, left: 20 }}>
+            <FaChevronLeft
+              size={"2em"}
+              style={{ color: "black", fontWight: "lighter" }}
             />
-            <div id="ItineraryDiv">
-              {RenderItinerary()}
-            </div>
+          </Link>
+        <img
+          src={itineraryPic}
+          style={{
+            width: "100%",
+            height: "calc(100vh)",
+            objectFit: "cover",
+            marginBottom: "-10px",
+          }}
+        />
+        <div id="ItineraryDiv">{RenderItinerary()}</div>
       </div>
     );
   }
