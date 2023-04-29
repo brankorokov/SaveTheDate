@@ -97,12 +97,12 @@ hr {
   .timeDiv {
     text-align: center;
     font-family: "RetroSignature";
-    font-size: 2.2rem;
+    font-size: 1.7rem;
   }
 }
 
 /* Desktops and laptops ----------- */
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1224px) {
   #ItineraryDiv {
     background: rgba(255, 255, 255, 0.7);
     height: 70%;
