@@ -37,10 +37,6 @@ export class Itinerary extends Component {
     });
   }
 
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     return (
       <div>
@@ -56,8 +52,9 @@ export class Itinerary extends Component {
             width: "100%",
             height: "calc(100vh)",
             objectFit: "cover",
-            marginBottom: "-10px",
+            marginBottom: "-10px"
           }}
+          alt=""
         />
         <div id="ItineraryDiv">{RenderItinerary()}</div>
       </div>

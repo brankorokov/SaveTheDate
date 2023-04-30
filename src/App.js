@@ -1,7 +1,5 @@
 import React, { Component } from "react";
-import { BrowserRouter, Routes, Router, Route } from "react-router-dom";
-import { Layout } from "./components/Layout";
-
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./custom.css";
 import { Home } from "./components/Home";
 import { Itinerary } from "./components/Itinerary.js";

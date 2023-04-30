@@ -1,8 +1,5 @@
 import React, { Component } from "react";
-//test
-import weddingPic from "../Assets/images/Overhead-Dubrovnik.jpg";
-import paraglidePic from "../Assets/images/Paraglide.jpg";
-import { Link, Element, scroller } from "react-scroll";
+import { Link } from "react-scroll";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 
     
@@ -26,9 +23,6 @@ function UpOrDownLink(input) {
 }
 
 export class LinkButton extends Component {
-  constructor(props) {
-    super(props);
-  }
 
   render() {
     return (

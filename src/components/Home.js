@@ -1,43 +1,20 @@
 ﻿import React, { Component } from "react";
-//test
 import weddingPic from "../Assets/images/Overhead-Dubrovnik.jpg";
 import paraglidePic from "../Assets/images/Paraglide.jpg";
 import { Link } from "react-router-dom";
-import { Element, scroller } from "react-scroll";
-import { Itinerary } from "./Itinerary";
+import { Element } from "react-scroll";
 import { LinkButton } from "../components/LinkButton";
 
 export class Home extends Component {
   static displayName = Home.name;
 
   constructor(props) {
-    super(props);
-    this.state = {
-      isVisible: false,
-    };
-    this.observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          console.log(entry);
-          if (entry.isIntersecting) {
-            entry.target.classList.add("show");
-            this.setState({ isVisible: true });
-          }
-        });
-      },
-      { threshold: 0.5 }
-    );
-  }
-
-  componentDidMount() {
-    const hiddenElements = document.querySelectorAll(".hidden");
-    hiddenElements.forEach((el) => this.observer.observe(el));
+    super(props)
   }
 
   render() {
-    const { isVisible } = this.state;
     return (
-      <div className="col-12">
+      <div>
         <Element name="firstSection">
           <div
             style={{
@@ -56,6 +33,7 @@ export class Home extends Component {
                 objectFit: "cover",
                 bottom: "15% !important",
               }}
+              alt=""
             />
             <div id="LandingMainDiv">
               <h1 id="NameDiv">Roko & Nicole</h1>
@@ -74,7 +52,6 @@ export class Home extends Component {
         <Element name="nextSection">
           <div
             id="NextSectionDiv"
-            className={"hidden col-12"}
             style={{
               width: "100%",
               height: "calc(100vh)",
@@ -92,8 +69,9 @@ export class Home extends Component {
               style={{
                 width: "100%",
                 height: "calc(100vh)",
-                objectFit: "cover",
+                objectFit: "cover"
               }}
+              alt=""
             />
             <div
               style={{
