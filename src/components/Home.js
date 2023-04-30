@@ -60,10 +60,10 @@ export class Home extends Component {
             <div id="LandingMainDiv">
               <h1 id="NameDiv">Roko & Nicole</h1>
               <p id="Date">
-                06<span className="DatePole">|</span>02
+                06<span className="DatePole">|</span>03
                 <span className="DatePole">|</span>2023
               </p>
-              <p id="Location">Dubrovnik, Croatia</p>
+              <p id="Location">Komarna, Croatia</p>
             </div>
             <div id="DownArrow" style={{}}>
               <LinkButton UpOrDown={"DOWN"} LinkTo="overflow"></LinkButton>
