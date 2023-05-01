@@ -1,6 +1,6 @@
 ﻿import React, { Component } from "react";
-import weddingPic from "../Assets/images/Overhead-Dubrovnik.jpg";
-import paraglidePic from "../Assets/images/Paraglide.jpg";
+import weddingPic from "../Assets/images/Overhead-DubrovnikCompressed.jpg";
+import paraglidePic from "../Assets/images/ParaglideCompressed.jpg";
 import { Link } from "react-router-dom";
 import { Element } from "react-scroll";
 import { LinkButton } from "../components/LinkButton";

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import itineraryPic from "../Assets/images/ItineraryPic.jpg";
+import itineraryPic from "../Assets/images/ItineraryPicCompressed.jpg";
 import "./Itinerary.css";
 import { ItineraryObject } from "../components/ItineraryObject";
 import { Link } from "react-router-dom";
