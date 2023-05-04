@@ -4,7 +4,7 @@ import paraglidePic from "../Assets/images/ParaglideCompressed.jpg";
 import { Link } from "react-router-dom";
 import { Element } from "react-scroll";
 import { LinkButton } from "../components/LinkButton";
-
+//test
 export class Home extends Component {
   static displayName = Home.name;
 
