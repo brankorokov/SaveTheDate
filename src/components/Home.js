@@ -36,7 +36,7 @@ export class Home extends Component {
               alt=""
             />
             <div id="LandingMainDiv">
-              <h1 id="NameDiv">Roko & Nicole</h1>
+              <h4 id="NameDiv">Roko & Nicole</h4>
               <p id="Date">
                 06<span className="DatePole">|</span>03
                 <span className="DatePole">|</span>2023
