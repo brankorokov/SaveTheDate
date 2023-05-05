@@ -54,6 +54,7 @@ body {
   white-space: nowrap;
   overflow: hidden;
   padding: 2.3rem;
+  padding-bottom: 1rem;
 }
 
 #Date {
@@ -171,7 +172,7 @@ body {
     }
 
     #DownArrow {
-      margin-bottom: 20px;
+      margin-bottom: 50px;
     }
 
     #UpArrow {
@@ -226,7 +227,7 @@ body {
     }
 
     #DownArrow {
-      margin-bottom: 20px;
+      margin-bottom: 50px;
     }
 
     #Location {
