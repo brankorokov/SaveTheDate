@@ -109,7 +109,7 @@ export class Home extends Component {
             </div>
           </div>
         </Element>
-        <Element id="overflow" name="overflow"></Element>
+        <Element name="overflow"></Element>
       </div>
     );
   }
