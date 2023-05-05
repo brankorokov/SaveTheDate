@@ -23,6 +23,9 @@ body {
   margin: 0;
 }
 
+.DatePole{
+  font-weight: lighter;
+}
 #LandingMainDiv {
   background: rgba(255, 255, 255, 0.7);
   position: absolute;
@@ -83,7 +86,7 @@ body {
 
 #UpArrow {
   position: absolute;
-  top: 10%;
+  top: 7%;
   left: 50%;
   transform: translateX(-50%);
   cursor: pointer;
@@ -134,7 +137,11 @@ body {
     height: 2.5rem;
   }
 
-  /* IPHONE 6-8 PORTRAIT  */
+  /* IPHONE 6-8 PORTRAIT 
+  *
+  *
+  *
+  */
 
   @media screen and (max-width: 380px) and (max-height: 605px){
     #UpArrow {
@@ -145,4 +152,184 @@ body {
         cursor: pointer;
         z-index: 100;
       }
+  }
+ 
+  /* TABLETS 
+  *
+  *
+  *
+  */
+  @media screen and (min-width: 600px) and (max-width: 1000px){
+    
+    #LandingMainDiv{
+        width: 40%;
+        background: rgba(255, 255, 255, 0.7);
+    }
+
+    #NameDiv{
+      font-size: 5.3em;
+    }
+
+    #DownArrow {
+      margin-bottom: 20px;
+    }
+
+    #UpArrow {
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        transform: translateX(-50%);
+        cursor: pointer;
+        z-index: 100;
+      }
+
+      .cardButtonText {
+        margin: 0;
+      }
+      .card {
+        width: 60%;
+        height: auto;
+        margin: 1rem;
+        background-color: #fff;
+        padding: 1rem;
+        border-radius: 8px;
+        box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        background: rgba(255, 255, 255, 0.7);
+      }
+    
+      .card-button {
+        height: 3rem;
+      }
+  }
+
+  /* LARGER TABLETS/LAPTOPS 
+  *
+  *
+  *
+  */
+  @media screen and (min-width: 1001px) and (max-width: 1500px){
+    #LandingMainDiv{
+      min-width: 40%;
+      max-width: 60%;
+      max-height: 50%;
+      min-height: 40%;
+    }
+
+    #NameDiv{
+      font-size: 6.7rem;
+      padding-top: 0;
+    }
+
+    #Date {
+      font-size: 2.7rem;
+    }
+
+    #DownArrow {
+      margin-bottom: 20px;
+    }
+
+    #Location {
+      font-size: 5rem;
+    }
+
+    .cardContainer{
+      flex-direction: row;
+    }
+
+    .card {
+      width: 60%;
+      max-width: 40%;
+    }
+
+    .card-text {
+      font-size: 1.3rem;
+    }
+
+    .card-title {
+      font-family: "RetroSignature";
+      margin: 0;
+      font-size: 6rem;
+      padding-bottom: 1.5rem;
+    }
+    .cardButtonText {
+      margin: 0;
+      padding-top: 6px;
+      padding-bottom: 6px;
+      font-size: 1.2rem;
+    }
+  }
+
+  /* BIG
+  *
+  *
+  *
+  */
+  @media screen and (min-width: 1501px){
+    #LandingMainDiv{
+      min-width: 40%;
+      max-width: 50%;
+      max-height: 50%;
+      min-height: 40%;
+    }
+
+    #NameDiv{
+      font-size: 9rem;
+    }
+
+    #Date {
+      font-size: 2.7rem;
+    }
+
+    #DownArrow {
+      margin-bottom: 20px;
+    }
+
+    #Location {
+      font-size: 7rem;
+    }
+
+    .card {
+      width: 60%;
+      max-width: 40%;
+    }
+
+    .card-title {
+      font-family: "RetroSignature";
+      margin: 0;
+      padding-top: 2rem;
+      font-size: 6rem;
+      padding-bottom: 1.5rem;
+    }
+
+    .card {
+      width: 50%;
+      max-width: 30%;
+    }
+
+    .card-text {
+      font-size: 1.3rem;
+    }
+
+    .card-title {
+      font-family: "RetroSignature";
+      margin: 0;
+      font-size: 6rem;
+      padding-bottom: 1.5rem;
+    }
+
+    .cardButtonText {
+      margin: 0;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      font-size: 1.3rem;
+    }
+
+    .cardContainer{
+      flex-direction: row;
+    }
+
+    .card-button {
+      height: 4rem;
+    }
   }
