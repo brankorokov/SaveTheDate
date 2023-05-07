@@ -160,7 +160,7 @@ body {
   *
   *
   */
-  @media screen and (min-width: 600px) and (max-width: 1000px){
+  @media screen and (min-width: 606px) and (max-width: 1000px){
     
     #LandingMainDiv{
         width: 40%;
@@ -332,5 +332,34 @@ body {
 
     .card-button {
       height: 4rem;
+    }
+  }
+
+  @media only screen and (min-width: 480px) and (max-width: 767px) and (orientation: landscape) {
+    #LandingMainDiv{
+      min-width: 60%;
+      max-width: 50%;
+      max-height: 70%;
+      min-height: 70%;
+      margin-top: 5%;
+      padding: 2px;
+    }
+
+    .cardContainer{
+      flex-direction: row;
+    }
+
+    #NameDiv{
+      padding-top: 2px;
+    }
+
+    #Location {
+      padding-bottom: 2px;
+    }
+
+    #DownArrow {
+      position: absolute;
+      bottom: 0px;
+      margin-bottom: 0;
     }
   }

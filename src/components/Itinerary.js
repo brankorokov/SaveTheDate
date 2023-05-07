@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import itineraryPic from "../Assets/images/ItineraryPicCompressed.jpg";
-import "./Itinerary.css";
+import "./Itinerary2.css";
 import { ItineraryObject } from "../components/ItineraryObject";
 import { Link } from "react-router-dom";
 import { FaChevronLeft } from "react-icons/fa";
