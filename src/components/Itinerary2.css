@@ -1,0 +1,91 @@
+@font-face {
+  font-family: "Proxima Nova Rg";
+  src: local("ProximaNova-Regular"),
+    url("../Assets/Fonts/ProximaNova-Regular.otf") format("opentype");
+}
+@font-face {
+  font-family: "RetroSignature";
+  src: local("RetroSignature"),
+    url("../Assets/Fonts/RetroSignature.otf") format("opentype");
+}
+#ItineraryDiv {
+  background: rgba(255, 255, 255, 0.7);
+  height: 70%;
+  width: 70%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: "#FAF7F6";
+  border-radius: 8px;
+  margin: "auto";
+  max-width: 80%;
+  display: grid;
+  padding: 30px;
+  overflow-y: auto;
+}
+
+.itineraryObject {
+  display: flex;
+  flex-direction: column;
+  align-content: space-evenly;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 1),
+    rgba(0, 0, 0, 0)
+  );
+  width: 50%;
+}
+
+.timeDiv {
+  text-align: center;
+  font-family: "RetroSignature";
+  font-size: 1.7rem;
+}
+
+@media screen and (max-width: 460px) and (max-height: 700px) {
+  #ItineraryDiv {
+    height: 90%;
+    width: 90%;
+    padding: 10px;
+  }
+
+  .itineraryObject {
+    font-size: 0.9rem !important;
+  }
+
+  #LeftArrow {
+    z-index: 100 !important;
+    top: 30px !important;
+    left: 30px !important;
+  }
+
+  .timeDiv {
+    font-size: 1.8rem;
+  }
+  .eventDiv{
+    font-size: .9rem;
+  }
+}
+
+@media screen and (min-width: 461px) and (max-width: 1200px){
+  #ItineraryDiv {
+    height: 80%;
+    width: 70%;
+    padding: 10px;
+  }
+}
+
+@media screen and (min-width: 1200px){
+  #ItineraryDiv {
+    width: 45%;
+    height: 80%;
+    padding: 10px;
+  }
+}
