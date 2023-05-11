@@ -16,7 +16,7 @@ const itineraryObjects = [
     Event: "Dinner: Risotto, Choice of Lamb, Veal, Chicken, and Schnitzel",
   },
   { Time: "9:30-11:00", Event: "Dancing" },
-  { Time: "11:00-3:00", Event: "Dessert" },
+  { Time: "11:00-1:00", Event: "Dessert" },
 ];
 
 function RenderItinerary() {
