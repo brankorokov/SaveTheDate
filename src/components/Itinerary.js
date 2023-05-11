@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import itineraryPic from "../Assets/images/ItineraryPicCompressed.jpg";
-import "./Itinerary.css";
+import "./Itinerary2.css";
 import { ItineraryObject } from "../components/ItineraryObject";
 import { Link } from "react-router-dom";
 import { FaChevronLeft } from "react-icons/fa";
@@ -40,7 +40,7 @@ export class Itinerary extends Component {
   render() {
     return (
       <div>
-        <Link to="/" style={{ position: "absolute", top: 20, left: 20 }}>
+        <Link id="LeftArrow" to="/" style={{ position: "absolute", top: 20, left: 20 }}>
           <FaChevronLeft
             size={"2em"}
             style={{ color: "black", fontWight: "lighter" }}
@@ -52,7 +52,7 @@ export class Itinerary extends Component {
             width: "100%",
             height: "calc(100vh)",
             objectFit: "cover",
-            marginBottom: "-10px"
+            marginBottom: "-10px",
           }}
           alt=""
         />

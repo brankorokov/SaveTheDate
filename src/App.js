@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import "./custom.css";
+import "./custom2.css";
 import { Home } from "./components/Home";
 import { Itinerary } from "./components/Itinerary.js";
 

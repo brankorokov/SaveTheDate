@@ -6,10 +6,10 @@ export class ItineraryObject extends Component {
     return (
       <div className={"itineraryObject"}>
         <div className={"timeDiv"}>{this.props.time}</div>
-        <div style={{ textAlign: "center", fontFamily: "Proxima Nova Rg" }}>
+        <div className={"eventDiv"} style={{ textAlign: "center", fontFamily: "Proxima Nova Rg" }}>
           {this.props.event}
         </div>
-        <hr style={{}}></hr>
+        <hr></hr>
       </div>
     );
   }

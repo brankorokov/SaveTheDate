@@ -4,12 +4,12 @@ import paraglidePic from "../Assets/images/ParaglideCompressed.jpg";
 import { Link } from "react-router-dom";
 import { Element } from "react-scroll";
 import { LinkButton } from "../components/LinkButton";
-
+//test
 export class Home extends Component {
   static displayName = Home.name;
 
   constructor(props) {
-    super(props)
+    super(props);
   }
 
   render() {
@@ -36,7 +36,7 @@ export class Home extends Component {
               alt=""
             />
             <div id="LandingMainDiv">
-              <h1 id="NameDiv">Roko & Nicole</h1>
+              <h4 id="NameDiv">Roko & Nicole</h4>
               <p id="Date">
                 06<span className="DatePole">|</span>03
                 <span className="DatePole">|</span>2023
@@ -69,7 +69,7 @@ export class Home extends Component {
               style={{
                 width: "100%",
                 height: "calc(100vh)",
-                objectFit: "cover"
+                objectFit: "cover",
               }}
               alt=""
             />
@@ -101,15 +101,17 @@ export class Home extends Component {
                   <p className={"card-text"}>
                     Find our hand picked registry items here
                   </p>
-                  <button className="card-button">
-                    <p className="cardButtonText">Take me there!</p>
-                  </button>
+                  <Link to="https://www.amazon.com/wedding/nicole-mcintosh-roko-jelavi%C4%87--june-2023/registry/20GNQLCHOZQXN">
+                    <button className="card-button">
+                      <p className="cardButtonText">Take me there!</p>
+                    </button>
+                  </Link>
                 </div>
               </div>
             </div>
           </div>
         </Element>
-        <Element id="overflow" name="overflow"></Element>
+        <Element name="overflow"></Element>
       </div>
     );
   }
